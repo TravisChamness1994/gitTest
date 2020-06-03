@@ -8,4 +8,4 @@ Learning to use github is a skill that is useful professionally and personally. 
 
 ***Where to starts?*** Begin by setting up an account here at github.com. The account is free, and if you are using this professionally be sure to use a good username. GitHubs can act as a boost to your resume so take advantage of this if it fits your needs.
 
-
+***Lets begin setting up your first repository!*** To start a repository
