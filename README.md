@@ -14,6 +14,10 @@ For Linux Debian - In terminal enter ```sudo apt-get install git```
 
 For Linux Fedora - In terminal enter ```sudo yum install git```
 
+For Mac - go to http://git-scm.com/download/mac
+
+For Windows - got to hhp://git-scm.com/download/win
+
 
 ***Lets begin setting up your first repository!*** To start a repository, go to your profile and click the repositories section. Once there, click the New button to create a new repository. Follow the "Create a Repository" section of this guide for a good graphical example and instructions. https://guides.github.com/activities/hello-world/. You can name your repository anything you would like, but hello world is a good place to start practicing!
 
