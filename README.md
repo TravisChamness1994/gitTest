@@ -11,6 +11,7 @@ Learning to use github is a skill that is useful professionally and personally. 
 ***Installing Git:***
 
 For Linux Debian - In terminal enter ```sudo apt-get install git```
+
 For Linux Fedora - In terminal enter ```sudo yum install git```
 
 
