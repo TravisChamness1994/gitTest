@@ -26,7 +26,11 @@ We recommend before you begin creating local repositories that you first create 
 
 ***Initializing a local git repository***
 
-Creating a local repository is done by entering ```$ git init <Repository Name>``` 
+Creating a local repository is done by entering ```$ git init <Repository Name>``` EX: ```$ git init gitTest```. This is very much the same as creating a new directory and will appear in your repository directory that we created in the previous step. Check to make sure it was created by entering ```$ ls``` into the terminal. You should now see your created repository.
+
+***Using the local repository***
+
+Enter the initialized repository
 
 ***Lets begin setting up your first remote repository!*** To start a repository, go to your profile and click the repositories section. Once there, click the New button to create a new repository. Follow the "Create a Repository" section of this guide for a good graphical example and instructions. https://guides.github.com/activities/hello-world/. You can name your repository anything you would like, but hello world is a good place to start practicing!
 
