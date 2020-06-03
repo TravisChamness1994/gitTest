@@ -22,11 +22,11 @@ For Windows - got to http://git-scm.com/download/win
 
 ***Setting up git***
 
-We recommend before you begin creating local repositories that you first create a directory for your repositories. I created my directory at the terminal root. You can get to the root with ```cd ~``` command. The directory you choose to create can be named anything, but in keeping with context I chose to name my directory GitHub. Make the directory using ```mkdir <Directory Name>```
+We recommend before you begin creating local repositories that you first create a directory for your repositories. I created my directory at the terminal root. You can get to the root with ```$ cd ~``` command. The directory you choose to create can be named anything, but in keeping with context I chose to name my directory GitHub. Make the directory using ```$ mkdir <Directory Name>```  EX: ```$ mkdir GitHub ```in the command line and will produce a new directory of the directory name you have given. Enter the directory by now entering ```$ cd <Directory name>``` EX: ```$ cd GitHub```. This will be where we create our local repositories. 
 
 ***Initializing a local git repository***
 
-
+Creating a local repository is done by entering ```$ git init <Repository Name>``` 
 
 ***Lets begin setting up your first remote repository!*** To start a repository, go to your profile and click the repositories section. Once there, click the New button to create a new repository. Follow the "Create a Repository" section of this guide for a good graphical example and instructions. https://guides.github.com/activities/hello-world/. You can name your repository anything you would like, but hello world is a good place to start practicing!
 
