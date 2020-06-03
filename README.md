@@ -1,3 +1,3 @@
-#GitHub Introduction
+# GitHub Introduction
 
 ***By Travis Chamness***
