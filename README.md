@@ -31,6 +31,15 @@ Creating a local repository is done by entering ```$ git init <Repository Name>`
 ***Using the local repository***
 
 Enter the initialized repository using ```$ cd <Repository Name>``` where you can add files using the terminal. Once you have created or moved files to the repository, it is time to ***stage*** your git files. Staging is a term that describes preparing your files to be commited to your git repository. To stage, you will use the ```$ git add <File Name>``` command EX: ```$ git add helloWorld.c```. This will prepare the files added to be commited to your git repository. You can do this to multiple files at a time by entering a space between file names or truncate with the * symbol EX: ```$ git add *.c``` which would add any c files in the directory or ```$ git add *``` to add all files in the directory. Lets make sure we successfully added files to the staging aread by entering ```$ git status``` into our terminal. This will display information on the repository such as the branch, commits, and the files to be commited which are the files we added. For me after doing ```$ git add hello.c``` which I had been working very hard on, entering the ```$ git status``` command showed me that my hello.c file was successfully staged and waiting to be commited under the "changes to be commited" portion.
+```
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   hello.c
+```
 
 The next step is to commit the staged files. --- Continue here describing the git commit -m "" portion of commiting to local repo.
 
