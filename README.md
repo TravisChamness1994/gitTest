@@ -30,7 +30,7 @@ Creating a local repository is done by entering ```$ git init <Repository Name>`
 
 ***Using the local repository***
 
-Enter the initialized repository using ```$ cd <Repository Name>``` where you can add files using the terminal. Once you have created or moved files to the repository, it is time to ***stage*** your git files. Staging is a term that describes preparing your files to be commited to your git repository. To stage, you will use the ```$ git add <File Name>``` command EX: ```$ git add helloWorld.c```. This will prepare the files added to be commited to your git repository. You can do this to multiple files at a time by entering a space between file names or truncate with the * symbol EX: ```$ git add *.c``` which would add any c files in the directory or ```$ git add *``` to add all files in the directory. Lets make sure we successfully added files to the staging aread by entering ```$ git status``` into our terminal. This will display information on the repository such as the branch, commits, and the files to be commited which are the files we added. For me after doing ```$ git add hello.c``` which I had been working very hard on, entering the ```$ git status``` command showed me that my hello.c file was successfully staged and waiting to be commited under the "changes to be commited" portion.
+Enter the initialized repository using ```$ cd <Repository Name>``` where you can add files using the terminal. Once you have created or moved files to the repository, it is time to ***stage*** your git files. Staging is a term that describes preparing your files to be committed to your git repository. To stage, you will use the ```$ git add <File Name>``` command EX: ```$ git add helloWorld.c```. This will prepare the files added to be committed to your git repository. You can do this to multiple files at a time by entering a space between file names or truncate with the * symbol. EX: ```$ git add *.c``` adds            any c files in the directory or ```$ git add *``` to add all files in the directory to the staging area. Lets make sure we successfully added files to the staging aread by entering ```$ git status``` into the terminal. This will display information on the repository such as the branch, commits, and the files to be commited which are the files added. EX: if adding a helloc.c file to the staging are, the process would start by adding the hello.c file with ```$ git add hello.c```, entering the ```$ git status``` command to check that the hello.c file was successfully staged and waiting to be commited under the "changes to be committed" portion. This command would produce the following output showing our added and in th
 ```
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -38,10 +38,18 @@ Your branch is up to date with 'origin/master'.
 Changes to be committed:
   (use "git reset HEAD <file>..." to unstage)
 
-        modified:   hello.c
+        new file:   hello.c
 ```
 
-The next step is to commit the staged files. --- Continue here describing the git commit -m "" portion of commiting to local repo.
+The next step is to commit the staged files. Commiting our added files will save them to our local repository for safe storage. To commit the file or files, use the ```git commit``` command to send the staged files to the repository. However, to commit, a commit message will always be needed. The commit message will provide context to what is being committed. To commit the hello.c file shown above, the command would be...
+
+(Consider the state of your program and what has been modified in the commit message.)
+
+```$ git commit -m "First commit for hello world program. Project complete."```
+
+where ```-m``` is the message option for the commit which allows the user to incorporate the commit message in the command.  It is not mandatory to add the message this way, but may be the easiest method. Without adding the message option, a Vim text editor will be opened to prompt the user to add a message at the top of the file. 
+
+Once committed, the version is now saved in your local repository and can be 
 
 ***Lets begin setting up your first remote repository!*** To start a repository, go to your profile and click the repositories section. Once there, click the New button to create a new repository. Follow the "Create a Repository" section of this guide for a good graphical example and instructions. https://guides.github.com/activities/hello-world/. You can name your repository anything you would like, but hello world is a good place to start practicing!
 
