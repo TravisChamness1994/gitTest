@@ -64,7 +64,7 @@ Changes to be committed:
         new file:   hello.c
 ```
 
-The next step is to commit the staged files. Commiting our added files will save them to our local repository for safe storage. To commit the file or files, use the ```git commit``` command to send the staged files to the repository. However, to commit, a commit message will always be needed. The commit message will provide context to what is being committed. To commit the hello.c file shown above, the command would be...
+***The next step is to commit the staged files.*** Commiting our added files will save them to our local repository for safe storage. To commit the file or files, use the ```git commit``` command to send the staged files to the repository. However, to commit, a commit message will always be needed. The commit message will provide context to what is being committed. To commit the hello.c file shown above, the command would be...
 
 (Consider the state of your program and what has been modified in the commit message.)
 
@@ -72,7 +72,33 @@ The next step is to commit the staged files. Commiting our added files will save
 
 where ```-m``` is the message option for the commit which allows the user to incorporate the commit message in the command.  It is not mandatory to add the message this way, but may be the easiest method. Without adding the message option, a Vim text editor will be opened to prompt the user to add a message at the top of the file. 
 
-Once committed, the version is now saved in your local repository and can be 
+Once committed, the version is now saved in your local repository. ***As the local repository accumulates, the commits and commit information can be viewed*** with the ```git log``` command which will produce a log in the following format.
+
+```
+[Comp:Folder User$ git log
+commit 54b11d42e12dc6e9f070a8b5095a4492216d5320
+Author: author <author@gmail.com>
+Date:   Fri Jul 8 23:42:22 2016 +0300
+
+This is last commit message
+
+commit fd6cb176297acca4dbc69d15d6b7f78a2463482f
+Author: author <author@gmail.com>
+Date:   Fri Jun 24 20:20:24 2016 +0300
+
+This is previous commit message
+
+commit ab0de062136da650ffc27cfb57febac8efb84b8d
+Author: author <author@gmail.com>
+Date:   Thu Jun 23 00:41:55 2016 +0300
+
+This is previous previous commit message
+...
+
+```
+credit: https://stackoverflow.com/questions/2007662/rollback-to-an-old-git-commit-in-a-public-repo by Igor
+
+To access a specific commit from the log, take note of the number following commit (```commit ab0de062136da650ffc27cfb57febac8efb84b8d```). This is the commit hash number and will be used in a ```commit checkout <Commit Hash>``` command.
 
 ### Lets begin setting up your first remote repository! 
 
