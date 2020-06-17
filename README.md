@@ -53,7 +53,7 @@ Creating a local repository is done by entering ```$ git init <Repository Name>`
 
 ### Using the local repository
 
-Enter the initialized repository using ```$ cd <Repository Name>``` where you can add files using the terminal. Once you have created or moved files to the repository, it is time to ***stage*** your git files. Staging is a term that describes preparing your files to be committed to your git repository. To stage, you will use the ```$ git add <File Name>``` command EX: ```$ git add helloWorld.c```. This will prepare the files added to be committed to your git repository. You can do this to multiple files at a time by entering a space between file names or truncate with the * symbol. EX: ```$ git add *.c``` adds            any c files in the directory or ```$ git add *``` to add all files in the directory to the staging area. Lets make sure we successfully added files to the staging aread by entering ```$ git status``` into the terminal. This will display information on the repository such as the branch, commits, and the files to be commited which are the files added. EX: if adding a helloc.c file to the staging are, the process would start by adding the hello.c file with ```$ git add hello.c```, entering the ```$ git status``` command to check that the hello.c file was successfully staged and waiting to be commited under the "changes to be committed" portion. This command would produce the following output showing our added and in th
+Enter the initialized repository using ```$ cd <Repository Name>``` where you can add files using the terminal. Once you have created or moved files to the repository, it is time to ***stage*** your git files. Staging is a term that describes preparing your files to be committed to your git repository. To stage, you will use the ```$ git add <File Name>``` command EX: ```$ git add helloWorld.c```. This will prepare the files added to be committed to your git repository. You can do this to multiple files at a time by entering a space between file names or truncate with the * symbol. EX: ```$ git add *.c``` adds any c files in the directory or ```$ git add *``` to add all files in the directory to the staging area. Lets make sure we successfully added files to the staging aread by entering ```$ git status``` into the terminal. This will display information on the repository such as the branch, commits, and the files to be commited which are the files added. EX: if adding a helloc.c file to the staging are, the process would start by adding the hello.c file with ```$ git add hello.c```, entering the ```$ git status``` command to check that the hello.c file was successfully staged and waiting to be commited under the "changes to be committed" portion. This command would produce the following output showing our added files.
 ```
 On branch master
 Your branch is up to date with 'origin/master'.
@@ -94,13 +94,15 @@ Date:   Thu Jun 23 00:41:55 2016 +0300
 
 This is previous previous commit message
 ...
-
 ```
 credit: https://stackoverflow.com/questions/2007662/rollback-to-an-old-git-commit-in-a-public-repo by Igor
 
-To access a specific commit from the log, take note of the number following commit (```commit ab0de062136da650ffc27cfb57febac8efb84b8d```). This is the commit hash number and will be used in a ```commit checkout <Commit Hash>``` command.
+The git log will become a useful way to track what has happened and by whome when working in the company of others. First, a remote repository must be created.
 
 ### Lets begin setting up your first remote repository! 
 
-To start a repository, go to your profile and click the repositories section. Once there, click the New button to create a new repository. Follow the "Create a Repository" section of this guide for a good graphical example and instructions. https://guides.github.com/activities/hello-world/. You can name your repository anything you would like, but hello world is a good place to start practicing!
+To start a remote repository, go to your profile at github.com and click the repositories section. Once there, click the New button to create a new repository. Follow the "Create a Repository" section of the following guide for a good graphical example and instructions ~ https://guides.github.com/activities/hello-world/. Once completed, lets get the remote repository and your local git on the same page.
 
+Enter the terminal of your computer and navigate to your git directory that we created earlier in this tutorial. Here we will be cloning the remote repository to our local computer. To clone the repository enter the command ``` git clone <Repository Link>``` EX: ```$ git clone https://github.com/myGitHub/gitProject```. Once done, the ****gitProject**** should now be appearing in your local directory. Check by entering ```$ ls``` in your terminal to list the contents in your present directory. You can now enter that git by using the change directory command EX: ```$ cd gitProject```. Using this as our source for project work will allow us to work and commit versions of a project as well as push to a remote repository for the world to see and collobarate with.
+
+***Pushing to the Remote Repository*** is an essential function when working with a cloned repository. To keep the remote repository current with the local repository, it requires the same add and commit process of the files we want to keep up to date, followed by a ```push``` command. Once you have successfully added and committed the files to your local repository enter ```$ git push``` into your terminal.
